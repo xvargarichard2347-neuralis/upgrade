@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPGRADE — B2B Webfejlesztés, SEO és Arculat Kuráció</title>
+  <meta name="description" content="Ne légy szellem az online térben. B2B weboldal fejlesztés, Google láthatóság és arculat kuráció két dedikált specialistától.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nyers papír és film-grain textúra -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Szekcióváltó Editorial Átmenet Réteg (Scroll Down kattintáskor) -->
+  <div class="section-transition-curtain" id="sectionCurtain" aria-hidden="true">
+    <div class="curtain-layer curtain-red"></div>
+    <div class="curtain-layer curtain-ink"></div>
+  </div>
+
+  <!-- ================= FELSŐ SÁV: NAV ================= -->
+  <header class="top-bar" id="top-nav">
+    <div class="top-bar-left">
+      <a href="#hero" class="brand-logo">UPGRADE</a>
+      <span class="brand-divider">/</span>
+      <span class="brand-tag">B2B Digitális<br>Kuráció</span>
+    </div>
+
+    <nav class="top-bar-nav" aria-label="Fő navigáció">
+      <a href="#duality" class="nav-link">Két Szakértő</a>
+      <a href="#disciplines" class="nav-link">Szolgáltatások</a>
+      <a href="#works" class="nav-link">Rendszer</a>
+      <a href="#contact" class="nav-link">Kapcsolat</a>
+    </nav>
+
+    <div class="top-bar-right">
+      <a href="#contact" class="start-link" data-label="PROJEKT INDÍTÁSA">
+        <span class="start-text">PROJEKT INDÍTÁSA</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SZEKCIÓ ================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-stage" id="hero-stage">
+        <!-- Hatalmas, egymásba csúszó Condensed Főcím (feljebb pozicionálva) -->
+        <h1 class="hero-mega-title">
+          <span class="mega-line line-dark-red">NE LÉGY</span>
+          <span class="mega-line line-ink">TÖBBÉ</span>
+          <span class="mega-line accent-red">SZELLEM.</span>
+        </h1>
+
+        <!-- Interaktív Lebegő Spray Virág -->
+        <div class="floating-flower-wrap" id="floatingFlower">
+          <canvas id="sprayFlowerCanvas" width="560" height="560"></canvas>
+        </div>
+
+        <!-- SZELLEM. szóval vízszintben lévő CTA gomb és száraz, lényegretörő mini CTA -->
+        <div class="hero-cta-anchor">
+          <a href="#contact" class="hero-fill-btn" data-label="LÉPJ VELÜNK KAPCSOLATBA">
+            <span class="fill-btn-text">LÉPJ VELÜNK KAPCSOLATBA</span>
+          </a>
+          <p class="hero-mini-cta">
+            Írd meg, mivel foglalkozik a céged, és megmutatjuk, hol veszítesz most <strong class="brush-underline">megkereséseket.</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero alsó információs szekció -->
+      <div class="hero-bottom-row">
+        <div class="hero-manifesto">
+          <p>
+            A legtöbb B2B cég kiváló a valóságban, de láthatatlan az interneten.
+            Weboldal fejlesztés, Google láthatóság és arculat egyetlen kézből.
+          </p>
+        </div>
+
+        <!-- Standard, egységes vonalvastagságú 4x nagyobb nyíl (interaktív szekció-átmenettel) -->
+        <a href="#duality" class="scroll-down-cta" id="scrollDownBtn">
+          <span class="scroll-label">NYOMJ MEG</span>
+          <span class="moving-arrow-wrap">
+            <svg class="standard-arrow-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="32" y1="8" x2="32" y2="54" stroke="currentColor" stroke-width="4" stroke-linecap="square" />
+              <polyline points="14,38 32,56 50,38" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" />
+            </svg>
+          </span>
+        </a>
+
+        <div class="hero-bottom-spacer" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ================= KÉT SZAKÉRTŐ (PIAC ÉS KÓD) ================= -->
+    <section class="duality-section theme-ink" id="duality">
+      <div class="duality-split-header">
+        <h2 class="split-word">PIAC</h2>
+        <h2 class="split-word">KÓD</h2>
+      </div>
+
+      <div class="duality-editorial-body">
+        <div class="duality-col-left">
+          <div class="editorial-subhead">
+            <h3 class="subhead-title">Hirdetés és piaci preferenciák</h3>
+          </div>
+          <p class="tight-copy">
+            Mély piaci ismeret, B2B döntési pszichológia és hirdetési stratégia. Pontosan tudjuk, mire keresnek a döntéshozók, és milyen érvek fordítják a látogatót fizető ügyféllé.
+          </p>
+
+          <!-- 3 Piaci Expert Piktogram + Hover Infografika -->
+          <div class="expert-interactive-zone" data-expert="market">
+            <div class="pictogram-row">
+              <!-- Piac 01: Döntéshozói pszichológia -->
+              <button type="button" class="pictogram-trigger" data-target="market-1" aria-label="Döntéshozói Fókusz">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    <line x1="20" y1="2" x2="20" y2="9" stroke="currentColor" stroke-width="2"/>
+                    <line x1="20" y1="31" x2="20" y2="38" stroke="currentColor" stroke-width="2"/>
+                    <line x1="2" y1="20" x2="9" y2="20" stroke="currentColor" stroke-width="2"/>
+                    <line x1="31" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Döntési Fókusz</span>
+              </button>
+
+              <!-- Piac 02: Keresleti szűrés -->
+              <button type="button" class="pictogram-trigger" data-target="market-2" aria-label="Fizetőképes Kereslet">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 8H35L24 22V34L16 30V22L5 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+                    <line x1="11" y1="14" x2="29" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Célzott Szűrés</span>
+              </button>
+
+              <!-- Piac 03: Piaci pozicionálás -->
+              <button type="button" class="pictogram-trigger" data-target="market-3" aria-label="Piaci Tekintély">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="24" width="6" height="10" stroke="currentColor" stroke-width="2"/>
+                    <rect x="17" y="16" width="6" height="18" stroke="currentColor" stroke-width="2"/>
+                    <rect x="28" y="6" width="6" height="28" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Árazási Erő</span>
+              </button>
+            </div>
+
+            <!-- Hoverre nyíló Infografika és Magyarázat (Piac) -->
+            <div class="expert-infographic-stage">
+              <div class="infographic-card" id="market-1">
+                <div class="infographic-header">
+                  <span class="info-kicker">PIACI PSZICHOLÓGIA</span>
+                  <span class="info-highlight">+340% ajánlatkérés</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Általános céges szöveg</span><span>0.9% konverzió</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 22%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Döntéshozói érvekre épített struktúra</span><span>4.1% konverzió</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 88%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kell a piaci expert?</strong> Egy B2B döntéshozó 5 másodperc alatt felméri, hogy érted-e a problémáját. A piaci szakértő pontosan tudja, milyen üzleti érvek fordítják a látogatót valós megrendelővé.
+                </p>
+              </div>
+
+              <div class="infographic-card" id="market-2">
+                <div class="infographic-header">
+                  <span class="info-kicker">HIRDETÉSI PRECIZITÁS</span>
+                  <span class="info-highlight">92% releváns elérés</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Szűretlen hirdetési forgalom</span><span>74% meddő kiadás</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 74%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Célzott B2B döntéshozói szűrés</span><span>92% fizetőképes érdeklődő</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 92%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kell a piaci expert?</strong> Hiába van erős weboldalad, ha érdektelen kattintásokra megy el a hirdetési keret. Kiszűrjük a nézelődőket, és csak azoknak mutatjuk az ajánlatodat, akiknek most van rá igényük.
+                </p>
+              </div>
+
+              <div class="infographic-card" id="market-3">
+                <div class="infographic-header">
+                  <span class="info-kicker">PIACI POZICIONÁLÁS</span>
+                  <span class="info-highlight">+45% magasabb árazás</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Megkülönböztetés nélküli megjelenés</span><span>Árverseny kényszer</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 30%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Kurált szakértői pozíció</span><span>Prémium díjazás elfogadása</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 90%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kell a piaci expert?</strong> Ha ugyanúgy kommunikálsz, mint a konkurenciád, az ügyfél csak az ár alapján dönt. A piaci pozicionálás eléri, hogy ne a legolcsóbbat, hanem a legbiztonságosabb partnert lássák benned.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="duality-center-axis">
+          <div class="axis-visual">
+            <!-- Lassan forgó, egérmozgásra reagáló spray virág (a jobb alsó negyedét fedi a piros doboz) -->
+            <div class="duality-flower-wrap" id="dualityFlower">
+              <canvas id="dualityFlowerCanvas" width="560" height="560"></canvas>
+            </div>
+            <div class="split-photo-left"></div>
+            <div class="split-photo-right"></div>
+          </div>
+          <p class="axis-quote">
+            Nincs ügynökségi lánc. Két dedikált szakember közvetlen fúziója.
+          </p>
+        </div>
+
+        <div class="duality-col-right">
+          <div class="editorial-subhead">
+            <h3 class="subhead-title">Tiszta kód és technikai SEO</h3>
+          </div>
+          <p class="tight-copy">
+            Egyedi fejlesztés lassú sablonok nélkül. Maximális Google sebesség és hibátlan technikai SEO felépítés, amelyet a keresőmotorok a találati lista élére sorolnak.
+          </p>
+
+          <!-- 3 Kódoló / SEO Expert Piktogram + Hover Infografika -->
+          <div class="expert-interactive-zone" data-expert="code">
+            <div class="pictogram-row">
+              <!-- Kód 01: Sebesség és tiszta kód -->
+              <button type="button" class="pictogram-trigger" data-target="code-1" aria-label="Azonnali Betöltés">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 4L9 22H20L17 36L31 18H20L23 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Nyers Sebesség</span>
+              </button>
+
+              <!-- Kód 02: Technikai SEO Architektúra -->
+              <button type="button" class="pictogram-trigger" data-target="code-2" aria-label="Google Első Oldal">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="14" y="5" width="12" height="8" stroke="currentColor" stroke-width="2"/>
+                    <rect x="4" y="27" width="12" height="8" stroke="currentColor" stroke-width="2"/>
+                    <rect x="24" y="27" width="12" height="8" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 13V20M20 20H10V27M20 20H30V27" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Technikai SEO</span>
+              </button>
+
+              <!-- Kód 03: Egyedi rendszer és stabilitás -->
+              <button type="button" class="pictogram-trigger" data-target="code-3" aria-label="Egyedi Kódolás">
+                <span class="pictogram-icon">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="13,12 5,20 13,28" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+                    <polyline points="27,12 35,20 27,28" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+                    <line x1="23" y1="8" x2="17" y2="32" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+                <span class="pictogram-label">Tiszta Architektúra</span>
+              </button>
+            </div>
+
+            <!-- Hoverre nyíló Infografika és Magyarázat (Kód) -->
+            <div class="expert-infographic-stage">
+              <div class="infographic-card" id="code-1">
+                <div class="infographic-header">
+                  <span class="info-kicker">BETÖLTÉSI TELJESÍTMÉNY</span>
+                  <span class="info-highlight">0.4 mp / 99+ Speed</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Sablonos oldal (4.2 mp — 53% kilép)</span><span>42 / 100</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 42%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Egyedi, tiszta kód (azonnali megnyitás)</span><span>99 / 100</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 99%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kruciális a kódoló?</strong> Minden másodperc késlekedés a látogatók felét elriasztja. A felesleges sablonoktól mentes, kézzel írt kód azonnal betölt, így egyetlen érdeklődőt sem veszítesz technikai lassúság miatt.
+                </p>
+              </div>
+
+              <div class="infographic-card" id="code-2">
+                <div class="infographic-header">
+                  <span class="info-kicker">GOOGLE INDEXELÉS ÉS RANGSOR</span>
+                  <span class="info-highlight">68% kattintási arány</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>2. oldal és hátrébb</span><span>&lt; 1% organikus forgalom</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 8%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Technikai SEO-val épített Top 3 pozíció</span><span>68% organikus forgalom</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 86%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kruciális a kódoló?</strong> A Google algoritmusa a forráskódot olvassa. A fejlesztő olyan tiszta szemantikai struktúrát és séma-adatokat épít be, amelyet a keresőmotorok automatikusan a találati lista élére sorolnak.
+                </p>
+              </div>
+
+              <div class="infographic-card" id="code-3">
+                <div class="infographic-header">
+                  <span class="info-kicker">RENDSZER STABILITÁS</span>
+                  <span class="info-highlight">100% egyedi kontroll</span>
+                </div>
+                <div class="infographic-bars">
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Tömegsablon + 20 külső plugin</span><span>Sérülékeny, korlátozott</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-muted" style="--w: 35%;"></div></div>
+                  </div>
+                  <div class="bar-group">
+                    <div class="bar-meta"><span>Saját fejlesztésű architektúra</span><span>100% stabil és bővíthető</span></div>
+                    <div class="bar-track"><div class="bar-fill bar-accent" style="--w: 100%;"></div></div>
+                  </div>
+                </div>
+                <p class="infographic-copy">
+                  <strong>Miért kruciális a kódoló?</strong> A kész sablonok egy frissítéstől széteshetnek, és megkötik a kezed. Az egyedi kódolás pontosan a céged üzleti folyamatát követi, nem lassul be, és évekig karbantartásmentesen működik.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SZOLGÁLTATÁSOK KURÁCIÓJA ================= -->
+    <section class="disciplines-section" id="disciplines">
+      <div class="statement-row">
+        <h2 class="statement-heading">
+          ONLINE JELENLÉT KURÁCIÓ /<br>
+          OLYAN B2B CÉGEKNEK, AKIK<br>
+          NEM AKARNAK BEOLVADNI.
+        </h2>
+        <div class="statement-side-wrap">
+          <!-- Vibráns piros (#ff1a1a), lassan forgó és egérmozgásra reagáló kis virág félig a szöveg mögött -->
+          <div class="statement-flower-wrap" id="statementFlower">
+            <canvas id="statementFlowerCanvas" width="560" height="560"></canvas>
+          </div>
+          <p class="statement-side">
+            Három különálló alvállalkozó helyett egyetlen összehangolt rendszer. Arculat, fejlesztés és keresőoptimalizálás egy kézben.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vízszintes folyamatvonal -->
+      <div class="process-line-bar">
+        <div class="proc-node">Piaci audit</div>
+        <div class="proc-line"></div>
+        <div class="proc-node">Arculat és irány</div>
+        <div class="proc-line"></div>
+        <div class="proc-node">Egyedi kódolás</div>
+        <div class="proc-line"></div>
+        <div class="proc-node">Google dominancia →</div>
+      </div>
+
+      <!-- Lenyitható szolgáltatás-lista -->
+      <div class="discipline-tracklist">
+        <div class="track-header">
+          <span>SZAKTERÜLET</span>
+          <span>EREDMÉNY</span>
+          <span>RÉSZLETEK</span>
+        </div>
+
+        <!-- 01 -->
+        <div class="track-item">
+          <div class="track-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="track-title">B2B Weboldal Fejlesztés</span>
+            <span class="track-focus">Több beérkező ajánlatkérés</span>
+            <button type="button" class="track-expand-btn">
+              <span class="expand-label">Bővebben</span>
+              <span class="expand-icon">+</span>
+            </button>
+          </div>
+          <div class="track-details">
+            <div class="track-details-inner">
+              <p class="track-copy">
+                Amikor egy potenciális partner vagy beszerző felmegy az oldaladra, nem egy elavult, átláthatatlan felületet talál, hanem azonnal érti, mivel foglalkozol, miért vagy megbízhatóbb a versenytársaidnál, és hol tud veled kapcsolatba lépni. A végeredmény: kevesebb elvesztett látogató és több valós megkeresés.
+              </p>
+              <div class="track-chart-box">
+                <div class="chart-top-row">
+                  <span class="chart-title">KONVERZIÓS GÖRBE (LÁTOGATÓ → AJÁNLATKÉRÉS)</span>
+                  <span class="chart-stat">+310% megkeresés</span>
+                </div>
+                <svg class="stat-curve-svg" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Rács alapvonalak -->
+                  <line x1="10" y1="92" x2="350" y2="92" stroke="rgba(10,10,10,0.18)" stroke-width="1"/>
+                  <line x1="10" y1="52" x2="350" y2="52" stroke="rgba(10,10,10,0.08)" stroke-dasharray="3 3" stroke-width="1"/>
+                  <!-- Régi, stagnáló oldal görbéje -->
+                  <path d="M10 84 C95 82, 210 85, 345 80" stroke="rgba(10,10,10,0.32)" stroke-width="1.75" stroke-dasharray="4 4"/>
+                  <!-- Új B2B struktúra emelkedő görbéje -->
+                  <path class="curve-area" d="M10 84 C95 78, 175 46, 345 16 L345 92 L10 92 Z" fill="rgba(140,25,25,0.10)"/>
+                  <path class="curve-line" d="M10 84 C95 78, 175 46, 345 16" stroke="#8c1919" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle class="curve-dot" cx="345" cy="16" r="4.5" fill="#ff1a1a"/>
+                </svg>
+                <div class="chart-legend-row">
+                  <span class="legend-muted">— — Elavult felület (0.9%)</span>
+                  <span class="legend-accent">── Új B2B struktúra (3.8%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="track-item">
+          <div class="track-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="track-title">Google Láthatóság és SEO</span>
+            <span class="track-focus">Első oldalas találati pozíció</span>
+            <button type="button" class="track-expand-btn">
+              <span class="expand-label">Bővebben</span>
+              <span class="expand-icon">+</span>
+            </button>
+          </div>
+          <div class="track-details">
+            <div class="track-details-inner">
+              <p class="track-copy">
+                Amikor egy döntéshozó nem a céged nevére, hanem magára a szolgáltatásra keres a Google-ben, téged talál meg elsőként a konkurenciád helyett. Folyamatos, kiszámítható megrendelői utánpótlást hoz anélkül, hogy minden egyes látogatóért külön fizetned kellene.
+              </p>
+              <div class="track-chart-box">
+                <div class="chart-top-row">
+                  <span class="chart-title">ORGANIKUS FORGALOM ÍVE (1–12. HÓNAP)</span>
+                  <span class="chart-stat">Top 3 pozíció</span>
+                </div>
+                <svg class="stat-curve-svg" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="10" y1="92" x2="350" y2="92" stroke="rgba(10,10,10,0.18)" stroke-width="1"/>
+                  <line x1="120" y1="16" x2="120" y2="92" stroke="rgba(10,10,10,0.08)" stroke-dasharray="3 3" stroke-width="1"/>
+                  <line x1="235" y1="16" x2="235" y2="92" stroke="rgba(10,10,10,0.08)" stroke-dasharray="3 3" stroke-width="1"/>
+                  <!-- Exponenciális SEO növekedési görbe -->
+                  <path class="curve-area" d="M10 88 C110 86, 195 66, 345 14 L345 92 L10 92 Z" fill="rgba(140,25,25,0.10)"/>
+                  <path class="curve-line" d="M10 88 C110 86, 195 66, 345 14" stroke="#8c1919" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="120" cy="81" r="3" fill="#0a0a0a"/>
+                  <circle cx="235" cy="52" r="3.5" fill="#8c1919"/>
+                  <circle class="curve-dot" cx="345" cy="14" r="4.5" fill="#ff1a1a"/>
+                </svg>
+                <div class="chart-legend-row">
+                  <span class="legend-muted">Indexelés → Top 10</span>
+                  <span class="legend-accent">Ökumulatív organikus dominancia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="track-item">
+          <div class="track-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="track-title">Vizuális Arculat és Pozicionálás</span>
+            <span class="track-focus">Magasabb piaci bizalom és árazás</span>
+            <button type="button" class="track-expand-btn">
+              <span class="expand-label">Bővebben</span>
+              <span class="expand-icon">+</span>
+            </button>
+          </div>
+          <div class="track-details">
+            <div class="track-details-inner">
+              <p class="track-copy">
+                A céged online megjelenése összhangba kerül a munkád valódi minőségével. Egy komoly, egységes arculat már az első kapcsolatfelvétel előtt bizalmat épít, és lehetővé teszi, hogy magasabb árakat érvényesíts a piacon, mert a partnerek nem egy tucatcégként kezelnek.
+              </p>
+              <div class="track-chart-box">
+                <div class="chart-top-row">
+                  <span class="chart-title">ÉSZLELT PIACI ÉRTÉK ÉS ÁRAZÁSI ELTOLÓDÁS</span>
+                  <span class="chart-stat">+45% elfogadott árrés</span>
+                </div>
+                <svg class="stat-curve-svg" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="10" y1="92" x2="350" y2="92" stroke="rgba(10,10,10,0.18)" stroke-width="1"/>
+                  <!-- Tucatcég haranggörbe (balra tolódva, árverseny) -->
+                  <path d="M15 92 C55 92, 75 34, 115 34 C155 34, 175 92, 215 92" stroke="rgba(10,10,10,0.32)" stroke-width="1.75" stroke-dasharray="4 4"/>
+                  <!-- Kurált márka haranggörbe (jobbra és magasabbra tolódva) -->
+                  <path class="curve-area" d="M125 92 C175 92, 200 16, 245 16 C290 16, 315 92, 350 92 Z" fill="rgba(140,25,25,0.12)"/>
+                  <path class="curve-line" d="M125 92 C175 92, 200 16, 245 16 C290 16, 315 92, 350 92" stroke="#8c1919" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle class="curve-dot" cx="245" cy="16" r="4.5" fill="#ff1a1a"/>
+                </svg>
+                <div class="chart-legend-row">
+                  <span class="legend-muted">— — Árverseny zóna</span>
+                  <span class="legend-accent">── Prémium szakértői pozíció</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="track-item">
+          <div class="track-row" role="button" tabindex="0" aria-expanded="false">
+            <span class="track-title">Célzott B2B Hirdetések</span>
+            <span class="track-focus">Azonnali ügyfélszerzés</span>
+            <button type="button" class="track-expand-btn">
+              <span class="expand-label">Bővebben</span>
+              <span class="expand-icon">+</span>
+            </button>
+          </div>
+          <div class="track-details">
+            <div class="track-details-inner">
+              <p class="track-copy">
+                Közvetlenül azokat a döntéshozókat érjük el, akiknek most van szükségük a szolgáltatásodra. Nem égetjük a hirdetési keretedet érdektelen kattintásokra: kizárólag olyan vállalkozások látják az ajánlatodat, akikből fizető ügyfél válhat.
+              </p>
+              <div class="track-chart-box">
+                <div class="chart-top-row">
+                  <span class="chart-title">ÜGYFÉLSZERZÉSI KÖLTSÉG VS. KVALIFIKÁLT LEADEK</span>
+                  <span class="chart-stat">-58% meddő kiadás</span>
+                </div>
+                <svg class="stat-curve-svg" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="10" y1="92" x2="350" y2="92" stroke="rgba(10,10,10,0.18)" stroke-width="1"/>
+                  <!-- Csökkenő meddő kiadás / CAC görbe -->
+                  <path d="M10 24 C105 28, 185 74, 345 84" stroke="rgba(10,10,10,0.35)" stroke-width="1.75" stroke-dasharray="4 4"/>
+                  <!-- Emelkedő kvalifikált B2B lead görbe -->
+                  <path class="curve-area" d="M10 82 C85 42, 190 24, 345 16 L345 92 L10 92 Z" fill="rgba(140,25,25,0.10)"/>
+                  <path class="curve-line" d="M10 82 C85 42, 190 24, 345 16" stroke="#8c1919" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle class="curve-dot" cx="345" cy="16" r="4.5" fill="#ff1a1a"/>
+                </svg>
+                <div class="chart-legend-row">
+                  <span class="legend-muted">— — Egy ügyfélre jutó költség (CAC)</span>
+                  <span class="legend-accent">── Fizetőképes B2B megkeresések</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RENDSZER PILLÉREK ================= -->
+    <section class="index-blocks-section" id="works">
+      <div class="color-blocks-grid">
+        <article class="color-panel panel-paper">
+          <div class="panel-top">
+            <h3 class="panel-name">KÓD</h3>
+            <span class="panel-sub">EGYEDI ARCHITEKTÚRA</span>
+          </div>
+          <div class="panel-graphic graphic-arch"></div>
+        </article>
+
+        <article class="color-panel panel-blue">
+          <div class="panel-top">
+            <h3 class="panel-name">SEO</h3>
+            <span class="panel-sub">GOOGLE LÁTHATÓSÁG</span>
+          </div>
+          <div class="panel-graphic graphic-rank">
+            <div class="fluid-geo-shape geo-seo" aria-hidden="true"></div>
+            <div class="fluid-geo-ring geo-seo-ring" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="color-panel panel-red">
+          <div class="panel-top">
+            <h3 class="panel-name">MÁRKA</h3>
+            <span class="panel-sub">VIZUÁLIS TEKINTÉLY</span>
+          </div>
+          <div class="panel-graphic graphic-brand">
+            <div class="brand-orbit-ring" aria-hidden="true"></div>
+            <div class="brand-uniform-circle" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="color-panel panel-ink">
+          <div class="panel-top">
+            <h3 class="panel-name">PIAC</h3>
+            <span class="panel-sub">HIRDETÉSI SZINERGIA</span>
+          </div>
+          <div class="panel-graphic graphic-scale">
+            <div class="fluid-geo-shape geo-market" aria-hidden="true"></div>
+            <div class="fluid-geo-ring geo-market-ring" aria-hidden="true"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= KAPCSOLAT SZEKCIÓ ================= -->
+    <section class="contact-section" id="contact">
+      <div class="contact-editorial-wrap">
+        <div class="contact-main-column">
+          <h2 class="contact-brutal-title">
+            MINDEN NAP AZÉRT DOLGOZUNK,<br>
+            HOGY A CÉGED PIACVEZETŐKÉNT<br>
+            JELENJEN MEG.
+          </h2>
+
+          <div class="contact-two-cols">
+            <p class="contact-Raw-copy">
+              Nincs account manager. Közvetlenül a két alapítóval beszélsz. Ha eleged van abból, hogy a versenytársaid viszik el az ügyfeleket a Google keresőből, vegyük fel a kapcsolatot.
+              <br><br>
+              Válaszidő: legfeljebb 24 óra.
+            </p>
+
+            <div class="contact-direct-info">
+              <span class="contact-label">Közvetlen kapcsolat</span>
+              <a href="mailto:hello@upgrade-studio.com" class="raw-mail-link">HELLO@UPGRADE-STUDIO.COM</a>
+              <span class="raw-phone">+36 30 / Alapítói vonal</span>
+            </div>
+          </div>
+
+          <!-- Keretmentes minimalista űrlap -->
+          <form class="minimal-form" id="leadForm">
+            <div class="minimal-field-row">
+              <input type="text" placeholder="Neved / Céged" required>
+              <input type="email" placeholder="Email címed" required>
+              <input type="text" placeholder="Weboldalad (ha van)">
+            </div>
+            <div class="minimal-submit-row">
+              <button type="submit" class="raw-cta-btn">
+                <span class="cta-main-text">KONZULTÁCIÓ KÉRÉSE</span>
+                <span class="cta-sub-hint">
+                  <span class="cta-mini-arrow" aria-hidden="true">↑</span>
+                  <span class="cta-mini-label">nyomd meg!</span>
+                </span>
+              </button>
+              <span class="form-status" id="formFeedback"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Teljes szélességű lábléc felirat (Tiszta alap tipográfia + Hover esetén Hero két pirosából álló Liquid Gradient) -->
+      <div class="footer-mega-banner" id="footerMegaBanner">
+        <div class="footer-giant-word" id="footerGiantWord" data-text="UPGRADE MOST">UPGRADE MOST</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
